@@ -1,8 +1,11 @@
 list1=[] 
 list2=[]
+result_list=[]
 def merge_lists(n,x):
-    for i in range(n):
-        print(n[i],x[i])
+    for i in range (len(x)):
+        result_list.append(n[i])
+        result_list.append(x[i])
+    print(result_list)
 
 def fill_list2():
     x=input('please enter an charachter or number  for list 2 : ')
@@ -18,7 +21,7 @@ def fill_list2():
         elif varibale_decision=='finish':
             merge_lists(list1, list2)
             break
-    print(list2)
+    # print(list2)
 def fill_list1():
     x=input('please enter an charachter or number  : ')
     list1.append(x)
@@ -34,5 +37,5 @@ def fill_list1():
             fill_list2()
             break
 
-    print(list1)
+    # print(list1)
 fill_list1()
