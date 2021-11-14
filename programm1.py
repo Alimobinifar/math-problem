@@ -1,6 +1,6 @@
 list1=[] 
 list2=[]
-def fill_list():
+def fill_list1():
     x=input('please enter an charachter or number  : ')
     list1.append(x)
     while True:
@@ -12,9 +12,24 @@ def fill_list():
             new_variable=input('ok enter your value:')
             list1.append(new_variable)
         elif varibale_decision=='next':
+            fill_list2()
             break
-    print(list1)
 
-fill_list()
+    print(list1)
+fill_list1()
+def fill_list2():
+    x=input('please enter an charachter or number  for list 2 : ')
+    list2.append(x)
+    while True:
+        print('Thank you '+'if you wanna continue filling first list please enter {}'+'\n'+
+        'if you wanna finish the operation{}'.format('continue','finish')
+        )
+        varibale_decision=input()
+        if varibale_decision =='continue':
+            new_variable=input('ok enter your value:')
+            list1.append(new_variable)
+        elif varibale_decision=='next':
+            break
+    print(list2)
 
     
