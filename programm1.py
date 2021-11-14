@@ -1,7 +1,8 @@
 list1=[] 
 list2=[]
 def merge_lists(n,x):
-    print(n+x)
+    for i in range(n):
+        print(n[i],x[i])
 
 def fill_list2():
     x=input('please enter an charachter or number  for list 2 : ')
